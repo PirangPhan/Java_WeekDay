@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
 	public static void main(String[] args) {
-		Shape shape = new Shape();
+		Shape shape = new Shape(100, 200);
 		shape.draw();
 		System.out.println("-----");
 		
@@ -29,12 +29,11 @@ public class Main {
 		list.add(new Triangle());
 		list.add(new Rectangle());
 		list.add(new Square());
-		list.add(new Shape());
+		list.add(new Shape(300, 400));
 		
 		for (Shape item : list) {
 			item.draw();
 		}
-		
 		
 		
 	}
